@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(rel="stylesheet", href="./styles.css")
+		script(src="./script.js" defer) 
+		title Uploads
+	body
+		header 
+			h1 Uploads
+			p A simple project which uploads files to Oracle Cloud Object Storage.
+		main 
+			form(onsubmit="handleSubmit(event)")
+				label(for="file") Select a file to upload
+				input(type="file", name="file")
+				label(for="token") Auth token
+				textarea(name="token", rows="4")
+				input(type="submit", value="Upload")
+			dialog(close)
+				h2
+				p
+				button(onclick="closeDialog()") Close
+		footer
+			p Made with 👉😫👈
+			a(href="https://github.com/niitish/uploads", target="_blank", rel="noreferrer noopener") Source

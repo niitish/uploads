@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	max-width: 480px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2rem 0.5rem;
+}
+
+header {
+	margin-bottom: 2rem;
+}
+
+header h1,
+p {
+	margin: 0;
+	margin-bottom: 0.5rem;
+}
+
+input,
+label {
+	display: block;
+	font: inherit;
+	margin-bottom: 0.5rem;
+}
+
+label {
+	margin-top: 1rem;
+}
+
+textarea {
+	width: 100%;
+	resize: none;
+}
+
+input[type="submit"] {
+	margin-top: 1rem;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+footer p {
+	margin: 0;
+}
+
+dialog {
+	min-width: 300px;
+	max-width: 480px;
+}
+
+dialog h2 {
+	margin: 0;
+}
+
+dialog button {
+	font: inherit;
+}
+
+dialog p {
+	margin: 0.5rem 0;
+}
