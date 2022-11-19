@@ -9,6 +9,8 @@ import { StorageConfig } from "./types/types";
 config({ path: path.join(__dirname, "..", ".env") });
 const app = express();
 
+const PORT = process.env.PORT || 8080;
+
 const storageConfig: StorageConfig = {
 	configPath: path.join(__dirname, "..", ".oci", "config"),
 	namespace: process.env.OC_NAMESPACE!,
@@ -58,4 +60,6 @@ app.post("/", authenticate, (req: Request, res: Response) => {
 	});
 });
 
-app.listen(3000);
+app.listen(PORT, () => {
+	console.log(`Listening on port ${PORT}`);
+});
